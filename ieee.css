@@ -21,6 +21,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#395886", en
     font-size: 18px;
     list-style: 15px;
 }
+.logo + p{
+    padding-left: 20px;
+    padding-right: 10px;
+}
 .row
 {
     width: 100%;
@@ -49,11 +53,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#395886", en
 {
     flex-basis: 40%;
 }
-.logo
-{
-    width: 80px;
-    margin-bottom: 30px;
-}
+
 .email
 {
     width: fit-content;
@@ -125,4 +125,32 @@ hr
     {
         left: 100%;
     }
+}
+@media (max-width:700px)
+{
+    footer
+    {
+        bottom: unset;
+    }
+    .col
+{
+    flex-basis: 100%;
+    font-size: 1em;
+    /* padding: 10px; */
+}
+.col:nth-child(2),.col:nth-child(3)
+{
+    flex-basis: 100%;
+}
+.col:nth-child(1)
+{
+    flex-basis: 100%;
+}
+.row{
+    justify-content: center;
+}
+img
+{
+    width: 80%;
+}
 }
